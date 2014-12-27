@@ -17,3 +17,4 @@ data = data.values
 # gradient boosting     
 gbt = GradientBoostingClassifier(verbose = 1)
 gbt.fit(data, survive)
+gbt.predict(data[0, :]) # predict first row
