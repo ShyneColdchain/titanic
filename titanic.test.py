@@ -4,6 +4,7 @@ import inspect
 
 from sklearn.ensemble import GradientBoostingClassifier 
 
+# get complete lineage of tree (single tree)
 def get_lineage(tree, feature_names):
      left      = tree.children_left
      right     = tree.children_right
@@ -62,9 +63,9 @@ def main():
     
     #inspect.getmembers(gbt.estimators_[0][0].tree_)
     # or
-    #dir(gbt.estimators_[0][0].tree_)
+    #dir(tree)
 
-    #dir(gbt.estimators_[0][0].tree_.apply)  # inside .apply
+    #dir(tree.apply)  # inside .apply
     ################################################
     
                
